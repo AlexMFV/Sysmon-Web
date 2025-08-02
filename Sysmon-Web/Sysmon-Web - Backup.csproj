@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>v4.8</TargetFramework>
+    <RootNamespace>Sysmon_Web</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HardwareProviders" Version="2.0.0" />
+    <PackageReference Include="HardwareProviders.CPU.Standard" Version="2.0.1" />
+    <PackageReference Include="HardwareProviders.HDD.Standard" Version="2.0.1" />
+    <PackageReference Include="HardwareProviders.Standard" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OpenHardwareMonitorLib">
+      <HintPath>..\..\..\OpenHardwareMonitorLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
